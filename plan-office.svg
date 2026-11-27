@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="740" viewBox="0 0 1000 740">
+  <title>План административного корпуса ООО «СеверСнаб»</title>
+  <desc>Расчётный план здания 20 на 12 метров. Масштаб схемы — 40 пикселей на метр.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#43576b"/>
+    </marker>
+    <marker id="entry-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#2878a8"/>
+    </marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #172033; }
+      .title { font-size: 23px; font-weight: 700; }
+      .subtitle { font-size: 14px; fill: #536579; }
+      .room-name { font-size: 13px; font-weight: 700; }
+      .room-info { font-size: 12px; }
+      .small { font-size: 12px; }
+      .wall { fill: none; stroke: #17324d; stroke-width: 4; }
+      .partition { fill: none; stroke: #526579; stroke-width: 2; }
+      .dimension { fill: none; stroke: #43576b; stroke-width: 1.5; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .door { fill: none; stroke: #2878a8; stroke-width: 2; }
+      .door-path { fill: none; stroke: #2878a8; stroke-width: 2; stroke-dasharray: 5 4; marker-end: url(#entry-arrow); }
+    </style>
+  </defs>
+
+  <rect width="1000" height="740" fill="#ffffff"/>
+  <text class="title" x="500" y="34" text-anchor="middle">Административный корпус · 20 × 12 м</text>
+  <line class="dimension" x1="130" y1="96" x2="930" y2="96"/>
+  <text class="small" x="530" y="88" text-anchor="middle">20 м</text>
+  <line class="dimension" x1="88" y1="140" x2="88" y2="620"/>
+  <text class="small" x="72" y="380" text-anchor="middle" transform="rotate(-90 72 380)">12 м</text>
+
+  <rect x="130" y="140" width="800" height="480" fill="#f1f4f7"/>
+
+  <rect x="410" y="140" width="160" height="160" fill="#eaf2ff"/>
+  <rect x="570" y="140" width="160" height="160" fill="#eaf2ff"/>
+  <rect x="730" y="140" width="200" height="160" fill="#eaf2ff"/>
+
+  <path d="M130 300 H930 V460 H370 V420 H130 Z" fill="#f1f4f7"/>
+
+  <rect x="130" y="420" width="240" height="200" fill="#eaf2ff"/>
+  <rect x="370" y="460" width="160" height="160" fill="#eaf2ff"/>
+  <rect x="530" y="460" width="160" height="160" fill="#f0ebff"/>
+  <rect x="690" y="460" width="160" height="160" fill="#e5f4ed"/>
+  <rect x="850" y="460" width="80" height="160" fill="#f7f8fa"/>
+
+  <line class="wall" x1="130" y1="140" x2="930" y2="140"/>
+  <line class="wall" x1="130" y1="140" x2="130" y2="620"/>
+  <line class="wall" x1="130" y1="620" x2="930" y2="620"/>
+  <line class="wall" x1="930" y1="140" x2="930" y2="360"/>
+  <line class="wall" x1="930" y1="400" x2="930" y2="620"/>
+  <line class="partition" x1="410" y1="140" x2="410" y2="300"/>
+  <line class="partition" x1="570" y1="140" x2="570" y2="300"/>
+  <line class="partition" x1="730" y1="140" x2="730" y2="300"/>
+
+  <line class="partition" x1="410" y1="300" x2="470" y2="300"/>
+  <line class="partition" x1="510" y1="300" x2="630" y2="300"/>
+  <line class="partition" x1="670" y1="300" x2="790" y2="300"/>
+  <line class="partition" x1="830" y1="300" x2="930" y2="300"/>
+
+  <line class="partition" x1="130" y1="420" x2="230" y2="420"/>
+  <line class="partition" x1="270" y1="420" x2="370" y2="420"/>
+  <line class="partition" x1="370" y1="420" x2="370" y2="460"/>
+  <line class="partition" x1="370" y1="460" x2="430" y2="460"/>
+  <line class="partition" x1="470" y1="460" x2="590" y2="460"/>
+  <line class="partition" x1="630" y1="460" x2="750" y2="460"/>
+  <line class="partition" x1="790" y1="460" x2="930" y2="460"/>
+  <line class="partition" x1="530" y1="460" x2="530" y2="620"/>
+  <line class="partition" x1="690" y1="460" x2="690" y2="620"/>
+  <line class="partition" x1="850" y1="460" x2="850" y2="620"/>
+
+  <path class="door-path" d="M985 380 H940"/>
+
+  <text x="830" y="183" text-anchor="middle">
+    <tspan class="room-name" x="830">OFF-01 · Руководство</tspan>
+    <tspan class="room-info" x="830" dy="23">5 × 4 м</tspan>
+    <tspan class="room-info" x="830" dy="19">2 ПК · 2 точки</tspan>
+    <tspan class="room-info" x="830" dy="19">11 м от серверной</tspan>
+    <tspan class="room-info" x="830" dy="19">28 м кабеля</tspan>
+  </text>
+  <text x="650" y="183" text-anchor="middle">
+    <tspan class="room-name" x="650">OFF-02 · Бухгалтерия</tspan>
+    <tspan class="room-info" x="650" dy="23">4 × 4 м · 2 ПК + МФУ</tspan>
+    <tspan class="room-info" x="650" dy="18">3 точки · 13 м</tspan>
+    <tspan class="room-info" x="650" dy="18">48 м кабеля</tspan>
+  </text>
+  <text x="490" y="183" text-anchor="middle">
+    <tspan class="room-name" x="490">OFF-03 · Кадры</tspan>
+    <tspan class="room-info" x="490" dy="23">4 × 4 м · 2 ПК</tspan>
+    <tspan class="room-info" x="490" dy="18">2 точки · 16 м</tspan>
+    <tspan class="room-info" x="490" dy="18">38 м кабеля</tspan>
+  </text>
+  <text x="250" y="474" text-anchor="middle">
+    <tspan class="room-name" x="250">OFF-04 · Продажи</tspan>
+    <tspan class="room-info" x="250" dy="23">6 × 5 м · 3 ПК + сетевой принтер</tspan>
+    <tspan class="room-info" x="250" dy="18">4 линии × (18 + 3) м = 84 м</tspan>
+  </text>
+  <text x="450" y="514" text-anchor="middle">
+    <tspan class="room-name" x="450">OFF-05 · Снабжение</tspan>
+    <tspan class="room-info" x="450" dy="23">4 × 4 м · 2 ПК · 2 точки</tspan>
+    <tspan class="room-info" x="450" dy="18">15 м · 36 м кабеля</tspan>
+  </text>
+  <text x="610" y="514" text-anchor="middle">
+    <tspan class="room-name" x="610">OFF-07 · Переговорная</tspan>
+    <tspan class="room-info" x="610" dy="23">4 × 4 м</tspan>
+    <tspan class="room-info" x="610" dy="18">Точка доступа + резерв</tspan>
+    <tspan class="room-info" x="610" dy="18">2 точки · 10 м · 26 м</tspan>
+  </text>
+  <text x="770" y="514" text-anchor="middle">
+    <tspan class="room-name" x="770">OFF-06 · ИТ / серверная</tspan>
+    <tspan class="room-info" x="770" dy="23">4 × 4 м · 2 ПК · 2 точки</tspan>
+    <tspan class="room-info" x="770" dy="18">Стойка RACK-01</tspan>
+    <tspan class="room-info" x="770" dy="18">3 м · 12 м кабеля</tspan>
+  </text>
+
+</svg>

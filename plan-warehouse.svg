@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760">
+  <title>План складского корпуса ООО «СеверСнаб»</title>
+  <desc>Расчётный план здания 18 на 12 метров. Масштаб схемы — 40 пикселей на метр.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#43576b"/>
+    </marker>
+    <marker id="entry-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#2878a8"/>
+    </marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #172033; }
+      .title { font-size: 23px; font-weight: 700; }
+      .subtitle { font-size: 14px; fill: #536579; }
+      .room-name { font-size: 13px; font-weight: 700; }
+      .room-info { font-size: 13px; }
+      .small { font-size: 12px; }
+      .wall { fill: none; stroke: #17324d; stroke-width: 4; }
+      .partition { fill: none; stroke: #526579; stroke-width: 2; }
+      .dimension { fill: none; stroke: #43576b; stroke-width: 1.5; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .cable { fill: none; stroke: #c27a2c; stroke-width: 3; stroke-dasharray: 9 6; }
+      .door-path { fill: none; stroke: #2878a8; stroke-width: 2; stroke-dasharray: 5 4; marker-end: url(#entry-arrow); }
+    </style>
+  </defs>
+
+  <rect width="1000" height="760" fill="#ffffff"/>
+  <text class="title" x="500" y="34" text-anchor="middle">Складской корпус · 18 × 12 м</text>
+  <line class="dimension" x1="140" y1="96" x2="860" y2="96"/>
+  <text class="small" x="500" y="88" text-anchor="middle">18 м</text>
+  <line class="dimension" x1="80" y1="130" x2="80" y2="610"/>
+  <text class="small" x="64" y="370" text-anchor="middle" transform="rotate(-90 64 370)">12 м</text>
+
+  <rect x="140" y="130" width="720" height="480" fill="#f3f6f2"/>
+  <rect x="140" y="130" width="200" height="160" fill="#eaf2ff"/>
+  <line class="wall" x1="140" y1="130" x2="860" y2="130"/>
+  <line class="wall" x1="860" y1="130" x2="860" y2="610"/>
+  <line class="wall" x1="860" y1="610" x2="140" y2="610"/>
+  <line class="wall" x1="140" y1="130" x2="140" y2="330"/>
+  <line class="wall" x1="140" y1="410" x2="140" y2="610"/>
+  <path class="door-path" d="M85 370 H130"/>
+
+  <line class="partition" x1="340" y1="130" x2="340" y2="240"/>
+  <line class="partition" x1="340" y1="280" x2="340" y2="290"/>
+  <line class="partition" x1="140" y1="290" x2="220" y2="290"/>
+  <line class="partition" x1="260" y1="290" x2="340" y2="290"/>
+
+  <text x="235" y="158" text-anchor="middle">
+    <tspan class="room-name" x="235">WH-01 · Диспетчерская</tspan>
+    <tspan class="room-info" x="235" dy="22">5 × 4 м</tspan>
+    <tspan class="room-info" x="235" dy="19">3 ПК + принтер этикеток</tspan>
+    <tspan class="room-info" x="235" dy="19">4 медные точки · 32 м кабеля</tspan>
+  </text>
+
+  <text class="room-name" x="500" y="370" text-anchor="middle">WH-02 · Зона хранения</text>
+
+  <rect x="286" y="232" width="36" height="36" rx="3" fill="#d9efe4" stroke="#318366" stroke-width="2"/>
+  <line x1="295" y1="240" x2="313" y2="240" stroke="#318366" stroke-width="2"/>
+  <line x1="295" y1="249" x2="313" y2="249" stroke="#318366" stroke-width="2"/>
+  <line x1="295" y1="258" x2="313" y2="258" stroke="#318366" stroke-width="2"/>
+  <path class="cable" d="M322 260 H722"/>
+  <text class="small" x="522" y="246" text-anchor="middle" fill="#9b5b19">≈10 м трасса Cat5e</text>
+
+  <circle cx="722" cy="260" r="15" fill="#f0ebff" stroke="#8067b1" stroke-width="3"/>
+  <path d="M713 258 Q722 248 731 258 M716 262 Q722 256 728 262" fill="none" stroke="#8067b1" stroke-width="2"/>
+  <circle cx="722" cy="266" r="1.8" fill="#8067b1"/>
+  <text class="small" x="722" y="312" text-anchor="middle">13 м кабеля</text>
+
+  <text class="room-name" x="500" y="660" text-anchor="middle">Условные обозначения</text>
+
+  <rect x="180" y="680" width="30" height="30" rx="3" fill="#d9efe4" stroke="#318366" stroke-width="2"/>
+  <line x1="187" y1="687" x2="203" y2="687" stroke="#318366" stroke-width="2"/>
+  <line x1="187" y1="695" x2="203" y2="695" stroke="#318366" stroke-width="2"/>
+  <line x1="187" y1="703" x2="203" y2="703" stroke="#318366" stroke-width="2"/>
+  <text class="small" x="220" y="692">RACK-WH-01 · SW-WH-01</text>
+  <text class="small" x="220" y="710">Телекоммуникационный шкаф с коммутатором</text>
+
+  <circle cx="640" cy="695" r="15" fill="#f0ebff" stroke="#8067b1" stroke-width="3"/>
+  <path d="M631 693 Q640 683 649 693 M634 697 Q640 691 646 697" fill="none" stroke="#8067b1" stroke-width="2"/>
+  <circle cx="640" cy="701" r="1.8" fill="#8067b1"/>
+  <text class="small" x="665" y="692">AP-WH-01</text>
+  <text class="small" x="665" y="710">Точка доступа Wi‑Fi 6</text>
+</svg>
